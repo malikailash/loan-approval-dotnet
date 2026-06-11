@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Use controllers + health checks and register services
 builder.Services.AddControllers();
 builder.Services.AddHealthChecks();
-builder.Services.AddSingleton<LoanApprovalService>();
+builder.Services.AddScoped<LoanApprovalService>();
 
 if (builder.Environment.IsDevelopment())
 {
