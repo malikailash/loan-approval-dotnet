@@ -7,7 +7,6 @@ builder.Services.AddControllers();
 builder.Services.AddHealthChecks();
 builder.Services.AddSingleton<LoanApprovalService>();
 
-// Register OpenAPI/Swagger only in Development
 if (builder.Environment.IsDevelopment())
 {
     try
