@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../loan-approval-dotnet.Tests/loan-approval-dotnet.Tests.csproj" />
+  <Project Path="loan-approval-dotnet.csproj" />
+</Solution>
