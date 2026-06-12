@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -9,10 +9,15 @@
 
   <!-- Exclude test files located in the tests/ folder from the main project default compile include -->
   <ItemGroup>
+    <Compile Remove=".github\**" />
     <Compile Remove="tests\**\*.cs" />
+    <Content Remove=".github\**" />
+    <EmbeddedResource Remove=".github\**" />
+    <None Remove=".github\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include=".github\instructions\dotnet-standards.instructions.md" />
     <None Include="loan-approval-dotnet.sln" />
     <None Include="tests\loan-approval-dotnet.Tests.csproj" />
   </ItemGroup>
