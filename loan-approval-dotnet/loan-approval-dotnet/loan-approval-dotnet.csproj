@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include=".github\agents.md" />
     <None Include=".github\instructions\dotnet-standards.instructions.md" />
     <None Include="loan-approval-dotnet.sln" />
     <None Include="tests\loan-approval-dotnet.Tests.csproj" />
