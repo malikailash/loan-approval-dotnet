@@ -7,20 +7,9 @@
     <RootNamespace>loan_approval_dotnet</RootNamespace>
   </PropertyGroup>
 
-  <!-- Exclude test files located in the tests/ folder from the main project default compile include -->
+  <!-- Keep project file minimal. Test projects and .github docs should live at the repository root and not be included in the web project. -->
   <ItemGroup>
-    <Compile Remove=".github\**" />
-    <Compile Remove="tests\**\*.cs" />
-    <Content Remove=".github\**" />
-    <EmbeddedResource Remove=".github\**" />
-    <None Remove=".github\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include=".github\agents.md" />
-    <None Include=".github\instructions\dotnet-standards.instructions.md" />
     <None Include="loan-approval-dotnet.sln" />
-    <None Include="tests\loan-approval-dotnet.Tests.csproj" />
   </ItemGroup>
 
   <ItemGroup>
